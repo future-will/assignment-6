@@ -799,12 +799,122 @@ body{
 	margin-bottom: 0;
 }
 
+/* New Page: Cart*/
 
+#activeCartButton{
+	/*Since this is on the cart page, i chose to remove the hover and set set BG as the selected color*/
+	background-color: #E3C59F;
+	float: right;
+	border-radius: 8px;
+	height: 40px;
+	}
+.cartTitles{
+	display: flex;
+	flex-direction: row;
+	color: #566141;
+	font-size: 10pt;
+	font-weight: 500;
+	padding-top: 0; 
+	padding-bottom: 0; 
+}
+/*.cartTitle{
+	margin: 0 25% 12px 0;
+}*/
+#items{
+	padding-left: 5%;
+	/*flex-grow: 3;*/
+	width: 45%;
+}
+#quantity{
+	/*flex-grow: 1;*/
+	width: 10%;
+	text-align: center;
+}
+#price{
+	/*flex-grow: 2;*/
+	width: 20%;
+	text-align: center;
+}
+hr{
+	border: 2px solid #566141;
+	margin: 0 0 12px 0;
+}
+/*style for the contents of the cart probably a placeholder, I will know better when i add java script*/
+.cartItem{
+	display: flex;
+	flex-direction: row;
+	color:#566141;
+	font-size: 10pt;
+	margin-bottom: 18px;
+}
+.cartItemMain{
+	display: flex;
+	flex-direction: row;
+	/*flex-grow: 1;*/
+	width: 45%;
+	padding-left: 5%;
+}
+.cartItemImage{
+	
+	height: 148px;
+}
+.cartItemMainDetails{
+	padding-left: 5%;
+}
+.cartItemName{
+	margin-bottom: 15px;
+}
+.cartItemDetails{
+	font-weight: 300;
+	margin-top: 15px;
+}
+.cartItemQuantity{
+	/*flex-grow: 1;*/
+	width: 10%;
+	text-align: center;
+	/*padding-left: 5%;*/
+	
+}
+.cartItemPrice{
+	/*flex-grow: 1;
+	text-align: center;*/
+	width: 20%;
+	text-align: center;
+}
+.remove{
+	width: 15%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-right: 5%;
+}
+.remove h3{
+	padding-left: 6px;
+}
 
-
-
-
-
+.removeButton{
+	align-self: flex-start;
+	margin: 12px 0 auto 0;
+}
+/*checkout section*/
+.checkoutPrice{
+	width: 20%;
+	float: right;
+}
+.checkoutPriceItem{
+	color: #696969;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.checkoutPriceItem h2{
+	margin: 6px 0 6px 0;
+	font-size: 18px;
+}
+#checkoutButton{
+	width: 100%;
+	margin-bottom: 120px;
+}
 
 
 

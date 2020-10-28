@@ -54,13 +54,13 @@
 					<h4>Size</h4>
 					<!-- Changed the buttons to radio buttons to make the process easier to pass values -->
 					<input type="radio" id="tiny" name="size" value="tiny">
-  					<label for="tiny">Tiny</label>
+  					<label for="tiny" onclick="fieldsCheck()">Tiny</label>
   					<input type="radio" id="small" name="size" value="small">
-  					<label for="small">Small</label>
+  					<label for="small" onclick="fieldsCheck()">Small</label>
   					<input type="radio" id="medium" name="size" value="medium">
-  					<label for="medium">Medium</label>
+  					<label for="medium" onclick="fieldsCheck()">Medium</label>
   					<input type="radio" id="large" name="size" value="large">
-  					<label for="large">Large</label>
+  					<label for="large" onclick="fieldsCheck()">Large</label>
 					<!-- <button class="sizeSelect">Tiny</button>
 					<button class="sizeSelect">Small</button>
 					<button class="sizeSelect">Medium</button>
@@ -70,13 +70,13 @@
 					<h4>Color</h4>
 					<!-- change these to modified radio buttons also. this was a nightmare i had to ada a label with something in it to make the radios functional like the size input. this is probably a durty way of doing this -->
 					<input type="radio" id="strawberry" name="color" value="strawberry">
-					<label for="strawberry" id="strawberrySelect">.</label>
+					<label for="strawberry" id="strawberrySelect" onclick="fieldsCheck()">.</label>
   					<input type="radio" id="blackberry" name="color" value="blackberry">
-  					<label for="blackberry" id="blackberrySelect">.</label>
+  					<label for="blackberry" id="blackberrySelect" onclick="fieldsCheck()">.</label>
   					<input type="radio" id="crazyberry" name="color" value="crazyberry">
-  					<label for="crazyberry" id="crazyberrySelect">.</label>
+  					<label for="crazyberry" id="crazyberrySelect" onclick="fieldsCheck()">.</label>
   					<input type="radio" id="fireOrange" name="color" value="fireOrange">
-  					<label for="fireOrange" id="fireOrangeSelect">.</label>
+  					<label for="fireOrange" id="fireOrangeSelect"  onclick="fieldsCheck()">.</label>
 					<!-- <div class="colorSelect" id="strawberrySelect"></div>
 					<div class="colorSelect" id="blackberrySelect"></div>
 					<div class="colorSelect" id="crazyberrySelect"></div>
@@ -85,10 +85,10 @@
 				<!-- added quantity option after heuristic eval -->
 				<div class="qty">
 					<label for="qty">QTY</label>
-  					<input type="number" name="qty" min="1" max="99" id="qty">
+  					<input type="number" name="qty" min="1" max="99" id="qty" onclick="fieldsCheck()">
 				</div>
 				<!-- changed to input type button to easily add js -->
-				<input type="button" id="addToCart" value="ADD TO CART" onclick="addToCart()">
+				<input type="button" id="addToCart" value="ADD TO CART" onclick="addToCart()" disabled>
 				<!-- <button class="addToCart">ADD TO CART</button> -->
 			</div>
 		</div>

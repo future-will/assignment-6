@@ -615,22 +615,38 @@ body{
 	color: #FF5071;
 }
 #strawberrySelect:hover{
-	border: 2px solid black;
-	/*add onclick and on hover functions to add name of color*/
-	transition: .25s;
+	border: 2px solid #E3C59F;
+	padding: 2px 8px 2px 8px;	
 }
 #blackberrySelect{
 	background-color: #300D46;
 	color: #300D46;
 }
+#blackberrySelect:hover{
+	border: 2px solid #E3C59F;
+	padding: 2px 8px 2px 8px;	
+}
 #crazyberrySelect{
 	background-color: #50E9CD;
 	color: #50E9CD;
+}
+#crazyberrySelect:hover{
+	border: 2px solid #E3C59F;
+	padding: 2px 8px 2px 8px;	
 }
 #fireOrangeSelect{
 	background-color: #FF4C00;
 	color: #FF4C00;
 }
+#fireOrangeSelect:hover{
+	border: 2px solid #E3C59F;
+	padding: 2px 8px 2px 8px;	
+}
+.color input[type="radio"]:checked + label{
+	border: 2px solid #E3C59F;
+	padding: 2px 8px 2px 8px;
+}
+
 .reviews{
 	margin: 10px 20px 12px 0;
 	display: flex;
@@ -688,6 +704,10 @@ body{
 }
 #addToCart:hover{
 	background-color: #E3C59F;
+	transition: .25s;
+}
+#addToCart:disabled{
+	background-color: #989B93;
 	transition: .25s;
 }
 .productSecondaryInfo{

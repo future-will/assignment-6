@@ -66,14 +66,56 @@ function addToCart(){
 	//use quantity to get the qty not the number of items in the cart array
 	updateCartCounter(quantity);
 }
+function strawberrySelect(){
+	console.log("strawberrySelect");
+	document.getElementById("mainImage").src = "images/strawberrySelect.png";
+	document.getElementById("smallImage1").src = "productListImages/productDetailDogHarness2.png";
+	document.getElementById("smallImage2").src = "productListImages/productDetailDogHarness3.png";
+	document.getElementById("smallImage3").src = "productListImages/productDetailDogHarness4.png";
+	document.getElementById("smallImage4").src = "images/mainimageSmall.png";
+}
+function blackberrySelect(){
+	console.log("blackberrySelect");
+	document.getElementById("mainImage").src = "images/blackberrySelect.png";
+	document.getElementById("smallImage1").src = "images/mainimageSmall.png";
+	document.getElementById("smallImage2").src = "productListImages/productDetailDogHarness3.png";
+	document.getElementById("smallImage3").src = "productListImages/productDetailDogHarness4.png";
+	document.getElementById("smallImage4").src = "productListImages/productDetailDogHarness5.png";
+}
+function crazyberrySelect(){
+	console.log("crazyberrySelect");
+	document.getElementById("mainImage").src = "images/crazyberrySelect.png";
+	document.getElementById("smallImage1").src = "productListImages/productDetailDogHarness2.png";
+	document.getElementById("smallImage2").src = "images/mainimageSmall.png";
+	document.getElementById("smallImage3").src = "productListImages/productDetailDogHarness4.png";
+	document.getElementById("smallImage4").src = "productListImages/productDetailDogHarness5.png";
+}
+function fireOrangeSelect(){
+	console.log("crazyberrySelect");
+	document.getElementById("mainImage").src = "images/fireOrangeSelect.png";
+	document.getElementById("smallImage1").src = "productListImages/productDetailDogHarness2.png";
+	document.getElementById("smallImage2").src = "productListImages/productDetailDogHarness3.png";
+	document.getElementById("smallImage3").src = "images/mainimageSmall.png";
+	document.getElementById("smallImage4").src = "productListImages/productDetailDogHarness5.png";
+}
 function updateCartCounter(num){
 	//js is treating num like a string, IDK why. had to use Number() to convert to an int
 	cartCounter = cartCounter + Number(num);
 	//check if cartCounter is above 0
-
+	var cartAmount = document.getElementById("cartAmount");
+	var cartCount = document.getElementById("cartCount");
+	if (cartCounter > 0){
+		cartAmount.style.display = "block";
+		//passing in the new amount into html
+		cartCount.innerHTML = cartCounter;
+	} 
+	else{
+		cartAmount.style.display = "none";
+	}
 	//update the html with the new cart number
 	//innderHTML
-	window.localStorage.setItem("cartCounter", cartCounter);
+	localStorage.setItem("cartCounter", cartCounter);
+	console.log("local storage: " + localStorage.getItem("cartCounter"));
 	//for write up, problem if you added the item two times with same parameter, would not combine those qts, would show 2 separate lines in cart
 
 }

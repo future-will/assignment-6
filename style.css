@@ -9,6 +9,7 @@ body{
 	background-color: #F0F0F0;
 	height: 93px;
 	margin:0;
+
 }
 .header-right{
 	height: 40px;
@@ -33,6 +34,42 @@ body{
   	/*rgba to make transparent background color*/
   	background-color: rgba(0,0,0,0);
  }
+#cartButton{
+	float: right;
+	border-radius: 8px;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 2px solid #E3C59F;
+	margin-top: 0;
+	text-decoration: none;
+}
+#cartButton:hover{
+	background-color: #E3C59F; 
+	/*added cool transitions to keep changes from being so stark*/
+	transition: all .25s;
+}
+#cartIconNew{
+	height: 30px;
+	margin: 6px;
+}
+#cartAmount{
+	font-family: 'Roboto', sans-serif;
+	color: #566141;
+	margin-right: 6px;
+	/*This will toggle the visibility of the cart count in the header*/
+	/*and will be changed using js and local storage*/
+	display: none;
+}
+#logo{
+	float: left;
+	/*margin-top: 20px;*/
+	margin-left: 5%;
+}
+#searchIcon{
+	padding: 5px 10px 5px 0px;
+}
 .navBar{
 	display: flex;
 	flex-direction: row;
@@ -229,24 +266,6 @@ body{
 	flex-basis: content;
 }
 
-#cartButton{
-	float: right;
-	border-radius: 8px;
-	height: 40px;
-}
-#cartButton:hover{
-	background-color: #E3C59F; 
-	/*added cool transitions to keep changes from being so stark*/
-	transition: all .25s;
-}
-#logo{
-	float: left;
-	/*margin-top: 20px;*/
-	margin-left: 5%;
-}
-#searchIcon{
-	padding: 5px 10px 5px 0px;
-}
 #hero{
 	background-image:url("images/pexels-spencer-gurley-1448053.jpg");
 	background-position: center;
@@ -458,6 +477,8 @@ body{
 #mainImage{
 	align-self: flex-end;
 	margin-right: 40px;
+	width: 565px;
+	height: 483px;
 }
 .productMainImagesSmall{
 	margin-top: 20px;

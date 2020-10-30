@@ -13,9 +13,12 @@
 		<div class="header-right">
 			<input type="text" name="searchBar" placeholder="Search..." id="textInput">
 			<img src="icons/searchIcon.png" alt="cart" id="searchIcon">
-			<div id="cartButton">
-				<img src="icons/cartIcon.png" alt="cart" id="cartIcon">
-			</div>
+			<a href="cart.html" id="cartButton">
+				<img src="icons/cartIconNew.png" alt="cart" id="cartIconNew">
+				<div id="cartAmount">
+					<p id="cartCount"></p>
+				</div>
+			</a>
 		</div>
 	</div>	
 	<nav class="navBar">
@@ -31,10 +34,10 @@
 			<div class="productMainImages">
 				<img src="productListImages/productDetailDogHarness1.png" id="mainImage" alt="harness">
 				<div class="productMainImagesSmall">
-					<img src="productListImages/productDetailDogHarness2.png" alt="harness2">
-					<img src="productListImages/productDetailDogHarness3.png" alt="harness3">
-					<img src="productListImages/productDetailDogHarness4.png" alt="harness4">
-					<img src="productListImages/productDetailDogHarness5.png" alt="harness4">
+					<img src="productListImages/productDetailDogHarness2.png" id="smallImage1" alt="harness2">
+					<img src="productListImages/productDetailDogHarness3.png" id="smallImage2" alt="harness3">
+					<img src="productListImages/productDetailDogHarness4.png" id="smallImage3" alt="harness4">
+					<img src="productListImages/productDetailDogHarness5.png" id="smallImage4" alt="harness4">
 				</div>	
 			</div>
 			<div class="productMainInfo">
@@ -70,13 +73,13 @@
 					<h4>Color</h4>
 					<!-- change these to modified radio buttons also. this was a nightmare i had to ada a label with something in it to make the radios functional like the size input. this is probably a durty way of doing this -->
 					<input type="radio" id="strawberry" name="color" value="strawberry">
-					<label for="strawberry" id="strawberrySelect" onclick="fieldsCheck()">.</label>
+					<label for="strawberry" id="strawberrySelect" onclick="fieldsCheck();strawberrySelect();">.</label>
   					<input type="radio" id="blackberry" name="color" value="blackberry">
-  					<label for="blackberry" id="blackberrySelect" onclick="fieldsCheck()">.</label>
+  					<label for="blackberry" id="blackberrySelect" onclick="fieldsCheck();blackberrySelect();">.</label>
   					<input type="radio" id="crazyberry" name="color" value="crazyberry">
-  					<label for="crazyberry" id="crazyberrySelect" onclick="fieldsCheck()">.</label>
+  					<label for="crazyberry" id="crazyberrySelect" onclick="fieldsCheck();crazyberrySelect();">.</label>
   					<input type="radio" id="fireOrange" name="color" value="fireOrange">
-  					<label for="fireOrange" id="fireOrangeSelect"  onclick="fieldsCheck()">.</label>
+  					<label for="fireOrange" id="fireOrangeSelect"  onclick="fieldsCheck();fireOrangeSelect();">.</label>
 					<!-- <div class="colorSelect" id="strawberrySelect"></div>
 					<div class="colorSelect" id="blackberrySelect"></div>
 					<div class="colorSelect" id="crazyberrySelect"></div>
